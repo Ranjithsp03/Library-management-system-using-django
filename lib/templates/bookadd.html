@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>bookadd</title>
+</head>
+<body>
+        <div class="container">
+            <div class="card">
+                <form method="post" action="http://127.0.0.1:8000/bookadd/">
+                    {% csrf_token %}
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">booktitle</span>
+                        <input type="text" class="form-control" placeholder="booktitle" name="booktitle" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">bookname</span>
+                        <input type="text" class="form-control" placeholder="bookname" name="bookname" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">publisher</span>
+                        <input type="text" class="form-control" placeholder="publisher" name="publisher" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">author</span>
+                        <input type="text" class="form-control" placeholder="author" name="author" aria-label="Username" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">booknumber</span>
+                        <input type="text" class="form-control" placeholder="booknumber" name="booknumber" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">pubdate</span>
+                        <input type="text" class="form-control" placeholder="pubdate" name="pubdate" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">number</span>
+                        <input type="text" class="form-control" placeholder="number" name="number" aria-label="Password" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" id="btnsubmit" class="btn btn-success"style="width: 100%;">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+</body>
+</html>
